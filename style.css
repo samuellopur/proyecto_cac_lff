@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*BODY*/
+body {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+/*NAV*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 1.4em;
+
+	a {
+		margin-right: 1em;
+	}
+}
+
+/*banner*/
+.banner {
+    display: flex;
+    justify-content: center;
+}
+.banner img {
+    height: 20em;
+    padding: 3em;
+}
+
+/*carrousel*/
+.contenedor-recomendaciones{
+    height: 26em;
+}
+
+.img-carrusel {
+    width: 100%;
+    height: 30em; /* Establece la altura deseada */
+    object-fit: cover; /* La imagen se ajustará para cubrir el contenedor sin deformarse */
+    object-position: center top;
+}
+
+/*MAIN*/
+.contenedor-peliculas {
+    
+    article div {
+        display: flex;
+        align-items: center;
+    
+        h2 {
+            display: inline;
+            padding: 1em;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/*CARDS*/
+.desvanecer {
+    opacity: 0;
+}
+.desvanecer:hover {
+    opacity: 0.8;
+    background-color: #8008;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+/*FORM*/
+
+footer{
+	display: flex;
+	justify-content: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.center img{
+    height: 60px; /*Tamaño logos redes sociales */
+    background-color: white; /*Fondo blanco logos */
+}
+
+
+/*ESTILOS CARDS API*/
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+    left: 0;
+	background: #000000;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #111;
+	color: #fff;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: rgb(165, 4, 4);
+}
+
+/*ESTILOS PÁGINA DE INICIO DE SESIÓN*/
+
+.body-cuenta {
+    height: 100vh;
+}
+.footer-cuenta{
+    display: none;
+}
+
+.form-texto{
+    display: flex;
+    gap: 2em;
+}
+
+.form-cuenta {
+    min-width: 15em;
+    max-width: 30em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*ESTILOS PÁGINA DE CREAR CUENTA*/
+
+.body-formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-registro {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    section {
+
+        h3 {
+            margin-top: 1em;
+        }
+    }
+    .btn-cuenta {
+        margin: 2em;
+    }
+    a {
+        align-self: center;
+    }
+
+    form {
+        padding: 3em;
+    }
+}
