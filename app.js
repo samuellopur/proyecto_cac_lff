@@ -67,3 +67,8 @@ const cargarPeliculas = async() => {
 }
 
 cargarPeliculas();
+
+
+
+
+

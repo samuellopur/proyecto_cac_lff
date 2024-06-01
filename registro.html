@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   </head>
+  
   <!--Se divide en HEADER, MAIN y FOOTER, dentro del main todo el contenido de cada página-->
   <body data-bs-theme="dark" style="background-color: #101010;" class="body-formulario">
     <header>
@@ -47,30 +48,30 @@
         <a  href="./cuenta.html">
             <button class="btn btn-danger btn-cuenta">Ya tengo cuenta!</button>
         </a>
-        <form>
+        <form id="registrationForm">
             <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input type="text" placeholder="Digita tu nombre" class="form-control" id="nombre" required aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input type="text" placeholder="Digita tu apellido" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input type="email" placeholder="Digita tu email" class="form-control" id="exampleInputEmail1" required aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label"></label>
+            <input type="password" placeholder="Digita tu contraseña" class="form-control" id="exampleInputPassword1" required>
             <div id="emailHelp" class="form-text">No compartas tu información con nadie.</div>
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Repetir contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label"></label>
+            <input type="password" placeholder="Repetir contraseña" class="form-control" id="exampleInputPassword1" required>
         </div>
         <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
             <label class="form-check-label" for="exampleCheck1">Soy mayor de 18 años</label>
         </div>
         <button type="submit" class="btn btn-primary btn-danger">Enviar</button>

@@ -201,11 +201,11 @@ footer{
     display: flex;
     flex-direction: column;
     align-self: center;
-
+    
     section {
 
         h3 {
-            margin-top: 1em;
+            margin-top: 0.5em;
         }
     }
     .btn-cuenta {
